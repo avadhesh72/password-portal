@@ -1,0 +1,26 @@
+---
+     
+- fail:
+    msg: "{{pass_key}} var is not defined"
+  when: pass_key is not defined
+
+- name: Generate 12 char password for root
+  set_fact:
+    root_pass_key: "{{ lookup('password', '/dev/null chars=ascii_letters,digits,punctuation length=6') }}{{ lookup('password', '/dev/null length=6') }}"
+
+- name: Update root passwd
+  shell: echo -n {{root_pass_key}} | passwd --stdin root
+  become: yes
+  become_method: sudo
+  vars:
+    ansible_become_password: "{{pass_key}}"
+ 
+- name: Update Change password in {{db_table}}
+  community.mysql.mysql_query:
+    login_db: "{{db_name}}"
+    login_user: "{{db_user}}"
+    login_password: "{{db_pass}}"
+    query:
+      - INSERT INTO {{db_table}} (host_name, ip_addr, time, who_changed, root_passwd) VALUES('{{ansible_fqdn}}', '{{ansible_default_ipv4.address}}', '{{ansible_date_time.date}} {{ansible_date_time.time}}', '{{ansible_user}}', '{{root_pass_key}}')
+    single_transaction: yes
+  register: _insert_data  

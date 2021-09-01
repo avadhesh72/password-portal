@@ -1,0 +1,41 @@
+---
+
+- fail:
+    msg: "{{user_name}} var is not defined"
+  when: user_name is not defined
+
+- fail:
+    msg: "{{pass_key}} var is not defined"
+  when: pass_key is not defined
+      
+- name: Add users | create users
+  user: 
+    name: "{{ user_name }}"
+    shell: /bin/bash
+    createhome: yes
+    comment: 'create with ansible'
+  register: user_created
+
+- name: Remove {{sudo_file}}
+  file:
+    path: "{{sudo_file}}"
+    state: absent
+
+- name: template out sudo config
+  template:
+    src: sudo.j2
+    dest: "/etc/sudoers.d/{{user_name}}"
+    mode: 0440
+    owner: root
+    group: root
+  when: setup_sudo|bool
+
+- name: validate sudo for {{user_name}}
+  shell: sudo -l -U {{user_name}}
+  register: check_sudo
+  
+- debug:
+    var: check_sudo.stdout_lines
+
+- name: change user password
+  shell: echo {{pass_key}} | passwd --stdin {{user_name}}

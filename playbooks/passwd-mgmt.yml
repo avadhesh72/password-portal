@@ -1,0 +1,16 @@
+---
+
+- hosts: managed_hosts
+  gather_facts: true
+  vars_files:  
+    - vars/non-root-pass.yml
+    - vars/db.yml
+
+  roles:
+  - role: user-mgmt
+    tags:
+      - user-mgmt
+
+  - role: root-passwd-update
+    tags:
+      - root-passwd-update

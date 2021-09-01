@@ -1,0 +1,13 @@
+---
+
+- hosts: db_host
+  gather_facts: true
+  vars_files:
+    - vars/db.yml  
+  
+
+  roles:
+  - role: mysql
+    tags:
+      - mysql
+      - db
