@@ -1,7 +1,7 @@
 # Root User Password Management
 
-Change root password on demand using an with sudo permission, and store password history in mysql db.
-And retrive root password from database on demand.
+Change root password on demand using ansible with sudo permission, and store password history in mysql DB,
+And retrieve root password from database on demand.
 
 #### Pre-requisite
 1. Packages:
