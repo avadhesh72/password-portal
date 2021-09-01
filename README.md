@@ -1,2 +1,2 @@
 # password-portal
-Central Password Management 
+Root Password Management
