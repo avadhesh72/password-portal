@@ -1,8 +1,15 @@
 [managed_hosts]
-labhost1 ansible_host=192.168.1.36
+#test1 ansible_host=192.168.1.49
+ubuntu ansible_host=192.168.1.46
+
+#test-1 ansible_host=192.168.1.50
+#test-2 ansible_host=192.168.1.51
+#test-3 ansible_host=192.168.1.52
+#test-4 ansible_host=192.168.1.53
 
 [db_host]
-labhost1 ansible_host=192.168.1.36
+db ansible_host=192.168.1.37
 
 [all:vars]
 ansible_connection=ssh
+#ansible_python_interpreter=/usr/bin/python3

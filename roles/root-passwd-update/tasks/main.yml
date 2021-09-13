@@ -1,5 +1,4 @@
 ---
-     
 - fail:
     msg: "{{pass_key}} var is not defined"
   when: pass_key is not defined
@@ -8,19 +7,36 @@
   set_fact:
     root_pass_key: "{{ lookup('password', '/dev/null chars=ascii_letters,digits,punctuation length=6') }}{{ lookup('password', '/dev/null length=6') }}"
 
-- name: Update root passwd
+- name: Update root passwd in CentOS
   shell: echo -n {{root_pass_key}} | passwd --stdin root
   become: yes
   become_method: sudo
   vars:
     ansible_become_password: "{{pass_key}}"
- 
+  when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
+
+  #shell: echo -n {{root_pass_key}} | passwd --stdin root
+
+- name: Update root passwd in Ubuntu
+  raw: echo "root:{{root_pass_key}}" | sudo chpasswd 
+  become: yes
+  become_method: sudo
+  vars:
+    ansible_become_password: "{{pass_key}}"
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+
+- name: Set discovered Ansible Python interpreter.
+  set_fact:
+    ansible_python_interpreter: "{{ ansible_facts.python.executable }}"
+  when: ansible_python_interpreter is not defined
+
 - name: Update Change password in {{db_table}}
   community.mysql.mysql_query:
     login_db: "{{db_name}}"
     login_user: "{{db_user}}"
     login_password: "{{db_pass}}"
+    login_host: 192.168.1.37
     query:
       - INSERT INTO {{db_table}} (host_name, ip_addr, time, who_changed, root_passwd) VALUES('{{ansible_fqdn}}', '{{ansible_default_ipv4.address}}', '{{ansible_date_time.date}} {{ansible_date_time.time}}', '{{ansible_user}}', '{{root_pass_key}}')
     single_transaction: yes
-  register: _insert_data  
+  register: _insert_data 

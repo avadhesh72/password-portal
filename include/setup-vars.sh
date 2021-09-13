@@ -7,3 +7,4 @@ root_pass_var_file="playbooks/vars/root-pass.yml"
 DB_VARS_FILE="playbooks/vars/db.yml"
 db_name=passwd_mgmt_data
 db_table=passwd_mgmt_table
+

@@ -7,7 +7,23 @@
 - fail:
     msg: "{{pass_key}} var is not defined"
   when: pass_key is not defined
-      
+
+- name: install  Required Clinet packages in CentOS
+  yum:
+    name:
+      - python3-PyMySQL
+    state: latest
+  when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
+
+- name: install  Required Clinet packages in Ubuntu
+  apt:
+    name: {{ item }}
+    state: latest
+  with_items:
+    - mysql-client
+    - python-mysql* 
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+
 - name: Add users | create users
   user: 
     name: "{{ user_name }}"
@@ -37,5 +53,15 @@
 - debug:
     var: check_sudo.stdout_lines
 
-- name: change user password
+- name: change user password in CentOS 
   shell: echo {{pass_key}} | passwd --stdin {{user_name}}
+  when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'
+
+- name: change user password in Redhat 
+  shell: echo {{pass_key}} | passwd --stdin {{user_name}}
+  when: ansible_distribution == 'Redhat' or ansible_distribution == 'Red Hat Enterprise Linux'
+
+- name: change user password in ubuntu
+  raw: echo -e "{{pass_key}}\n{{pass_key}}" | passwd {{user_name}}
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
+ 

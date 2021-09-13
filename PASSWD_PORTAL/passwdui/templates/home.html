@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<br/>
+<div class="container" align="center", margin="auto">
+    <div class="row">    
+        <div class="col-xs-8 col-xs-offset-2">
+            <form class="form-inline my-2 my-lg-0" action="{% url 'home' %}" method="GET" value="{{request.GET.q}}">
+                <input style="border-radius: 20px; height: 45px; text-align: center; border-color: gray;" id="search" name="host" type="search"  aria-label="Search" placeholder="Search Hostname or IP Address...">
+                <!--<input name="submit" type="submit" value="Search"/>-->
+            </form>
+        </div>
+    </div>
+</div>
+{% if request.GET.q != "" %}
+<div class="container" align="center" margin-top="auto">
+    <table id="seacheddata" cellpadding="0" cellpacing="0" border="0" align="center">     
+    {% for host in object_list %}
+        <tr style="border-spacing: 20px 1rem;"></tr>
+            <td style="font-size: 18px;"><div style="text-align: right;">HostName:</div></td><td style="font-size: 18px;"><div style="text-align: left;">{{host.host_name}}</div></td>
+        </tr>
+        <tr style="border-spacing: 20px 1rem;"></tr>
+            <td style="font-size: 18px;"><div style="text-align: right;">IPAddr:</div></td><td style="font-size: 18px;"><div style="text-align: left;">{{host.ip_addr}}</div></td>
+        </tr>
+        <tr style="border-spacing: 20px 1rem;"></tr>
+            <td style="font-size: 18px;"><div style="text-align: right;">Last Changed:</div></td><td style="font-size: 18px;"><div style="text-align: left;">{{host.time}}</div></td>
+        </tr>
+        <tr style="border-spacing: 20px 1rem;"></tr>
+            <td style="font-size: 18px;"><div style="text-align: right;">Password:</div></td><td style="font-size: 18px;"><div style="text-align: left;">{{host.root_passwd}}</div></td>
+        </tr>
+    {% endfor %}
+</table>
+</div>
+{% endif %}
+{% endblock %}

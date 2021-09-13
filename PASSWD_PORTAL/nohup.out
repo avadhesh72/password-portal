@@ -1,0 +1,355 @@
+Watching for file changes with StatReloader
+[12/Sep/2021 01:19:53] "GET /?host=192.168.1.46 HTTP/1.1" 200 3797
+[12/Sep/2021 01:19:58] "GET /?host=192.168.1.48 HTTP/1.1" 200 4797
+[12/Sep/2021 01:20:03] "GET /?host=192.168.1.49 HTTP/1.1" 200 4797
+[12/Sep/2021 01:20:11] "GET /?host=192.168.1.46 HTTP/1.1" 200 3797
+[12/Sep/2021 01:20:35] "GET /?host=192.168.1.46 HTTP/1.1" 200 4797
+[12/Sep/2021 01:27:22] "GET /?host=192.168.1.46 HTTP/1.1" 200 4798
+[12/Sep/2021 05:02:06] "GET /admin/ HTTP/1.1" 302 0
+[12/Sep/2021 05:02:06] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2365
+[12/Sep/2021 05:02:06] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[12/Sep/2021 05:02:06] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[12/Sep/2021 05:02:06] "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[12/Sep/2021 05:02:06] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[12/Sep/2021 05:02:06] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[12/Sep/2021 05:02:07] "GET /admin/ HTTP/1.1" 302 0
+[12/Sep/2021 05:02:07] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2365
+[12/Sep/2021 05:02:07] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[12/Sep/2021 05:02:07] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[12/Sep/2021 05:02:07] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[12/Sep/2021 05:02:07] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[12/Sep/2021 05:02:11] "GET /accounts/logout/?next=/ HTTP/1.1" 302 0
+[12/Sep/2021 05:02:12] "GET / HTTP/1.1" 302 0
+[12/Sep/2021 05:02:12] "GET /accounts/login/?next=/ HTTP/1.1" 200 4082
+[12/Sep/2021 05:02:19] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2375
+[12/Sep/2021 05:02:33] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2375
+[12/Sep/2021 05:03:14] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[12/Sep/2021 05:03:14] "GET /admin/ HTTP/1.1" 200 5467
+[12/Sep/2021 05:03:14] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[12/Sep/2021 05:03:15] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[12/Sep/2021 05:03:15] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[12/Sep/2021 05:03:21] "GET / HTTP/1.1" 200 3798
+[12/Sep/2021 05:03:25] "GET /admin/ HTTP/1.1" 200 5467
+[12/Sep/2021 05:07:27] "GET / HTTP/1.1" 200 3798
+[12/Sep/2021 05:07:34] "GET /accounts/logout/?next=/ HTTP/1.1" 302 0
+[12/Sep/2021 05:07:34] "GET / HTTP/1.1" 302 0
+[12/Sep/2021 05:07:34] "GET /accounts/login/?next=/ HTTP/1.1" 200 4082
+[12/Sep/2021 05:07:38] "GET / HTTP/1.1" 302 0
+[12/Sep/2021 05:07:38] "GET /accounts/login/?next=/ HTTP/1.1" 200 4082
+[12/Sep/2021 05:07:39] "GET /admin/ HTTP/1.1" 302 0
+[12/Sep/2021 05:07:39] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+[12/Sep/2021 05:07:46] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[12/Sep/2021 05:07:46] "GET /admin/ HTTP/1.1" 200 5467
+[12/Sep/2021 05:07:50] "GET /admin/logout/ HTTP/1.1" 200 1529
+[12/Sep/2021 05:07:54] "GET /admin/ HTTP/1.1" 302 0
+[12/Sep/2021 05:07:54] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+[12/Sep/2021 08:06:03] "GET / HTTP/1.1" 302 0
+[12/Sep/2021 08:06:03] "GET /accounts/login/?next=/ HTTP/1.1" 200 4082
+[12/Sep/2021 08:06:05] "GET / HTTP/1.1" 302 0
+[12/Sep/2021 08:06:05] "GET /accounts/login/?next=/ HTTP/1.1" 200 4082
+[12/Sep/2021 08:06:13] "POST /accounts/login/ HTTP/1.1" 302 0
+[12/Sep/2021 08:06:13] "GET / HTTP/1.1" 200 3797
+[12/Sep/2021 08:06:19] "GET /?host=192.168.1.46 HTTP/1.1" 200 4798
+[12/Sep/2021 08:09:37] "GET /?host=192.168.1.50 HTTP/1.1" 200 4798
+[13/Sep/2021 00:31:15] "GET / HTTP/1.1" 200 3797
+[13/Sep/2021 00:31:15] "GET /static/logo_fortinet.png HTTP/1.1" 304 0
+[13/Sep/2021 00:31:22] "GET /?host=192.168.1.50 HTTP/1.1" 200 4798
+/root/password/password-portal/PASSWD_PORTAL/PASSWD_PORTAL/settings.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 12, 2021 - 01:19:43
+Django version 3.2.7, using settings 'PASSWD_PORTAL.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+/root/password/password-portal/PASSWD_PORTAL/PASSWD_PORTAL/urls.py changed, reloading.
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 4 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): oauth2_provider.
+Run 'python manage.py migrate' to apply them.
+September 13, 2021 - 01:56:03
+Django version 3.2.7, using settings 'PASSWD_PORTAL.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+?: (urls.W005) URL namespace 'oauth2_provider' isn't unique. You may not be able to reverse all URLs in this namespace
+
+System check identified 1 issue (0 silenced).
+/root/password/password-portal/PASSWD_PORTAL/PASSWD_PORTAL/urls.py changed, reloading.
+Performing system checks...
+
+
+You have 4 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): oauth2_provider.
+Run 'python manage.py migrate' to apply them.
+September 13, 2021 - 01:58:06
+Django version 3.2.7, using settings 'PASSWD_PORTAL.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/management/base.py", line 423, in check
+    databases=databases,
+  File "/usr/local/lib64/python3.6/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib64/python3.6/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib64/python3.6/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib64/python3.6/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/root/password/password-portal/PASSWD_PORTAL/PASSWD_PORTAL/urls.py", line 26
+    path('o/', namespace='oauth2_provider', include('oauth2_provider.urls')),
+                                           ^
+SyntaxError: positional argument follows keyword argument
+
+/root/password/password-portal/PASSWD_PORTAL/PASSWD_PORTAL/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/management/base.py", line 423, in check
+    databases=databases,
+  File "/usr/local/lib64/python3.6/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib64/python3.6/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib64/python3.6/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib64/python3.6/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/root/password/password-portal/PASSWD_PORTAL/PASSWD_PORTAL/urls.py", line 26
+    path('o/', namespace='oauth2_provider', include('oauth2_provider.urls')),
+                                           ^
+SyntaxError: positional argument follows keyword argument
+
+/root/password/password-portal/PASSWD_PORTAL/PASSWD_PORTAL/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "/usr/lib64/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib64/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/autoreload.py", line 64, in wrapper
+    fn(*args, **kwargs)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/management/commands/runserver.py", line 118, in inner_run
+    self.check(display_num_errors=True)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/management/base.py", line 423, in check
+    databases=databases,
+  File "/usr/local/lib64/python3.6/site-packages/django/core/checks/registry.py", line 76, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/checks/urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib64/python3.6/site-packages/django/core/checks/urls.py", line 23, in check_resolver
+    return check_method()
+  File "/usr/local/lib64/python3.6/site-packages/django/urls/resolvers.py", line 412, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib64/python3.6/site-packages/django/urls/resolvers.py", line 598, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib64/python3.6/site-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib64/python3.6/site-packages/django/urls/resolvers.py", line 591, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/root/password/password-portal/PASSWD_PORTAL/PASSWD_PORTAL/urls.py", line 26
+    path('o/', namespace='oauth2_provider', include('oauth2_provider.urls')),
+                                           ^
+SyntaxError: positional argument follows keyword argument
+
+/root/password/password-portal/PASSWD_PORTAL/PASSWD_PORTAL/urls.py changed, reloading.
+Performing system checks...
+
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+?: (urls.W005) URL namespace 'oauth2_provider' isn't unique. You may not be able to reverse all URLs in this namespace
+
+System check identified 1 issue (0 silenced).
+/root/password/password-portal/PASSWD_PORTAL/PASSWD_PORTAL/urls.py changed, reloading.
+Performing system checks...
+
+September 13, 2021 - 02:06:25
+Django version 3.2.7, using settings 'PASSWD_PORTAL.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+?: (urls.W005) URL namespace 'oauth2_provider' isn't unique. You may not be able to reverse all URLs in this namespace
+
+System check identified 1 issue (0 silenced).
+/root/password/password-portal/PASSWD_PORTAL/PASSWD_PORTAL/settings.py changed, reloading.
+Performing system checks...
+
+September 13, 2021 - 02:07:05
+Django version 3.2.7, using settings 'PASSWD_PORTAL.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+?: (urls.W005) URL namespace 'oauth2_provider' isn't unique. You may not be able to reverse all URLs in this namespace
+
+System check identified 1 issue (0 silenced).
+[13/Sep/2021 02:08:30] "GET /accounts/logout/?next=/ HTTP/1.1" 302 0
+[13/Sep/2021 02:08:30] "GET / HTTP/1.1" 302 0
+[13/Sep/2021 02:08:30] "GET /accounts/login/?next=/ HTTP/1.1" 200 4082
+[13/Sep/2021 02:08:38] "POST /accounts/login/ HTTP/1.1" 302 0
+[13/Sep/2021 02:08:38] "GET / HTTP/1.1" 200 3797
+[13/Sep/2021 02:08:43] "GET /accounts/logout/?next=/ HTTP/1.1" 302 0
+[13/Sep/2021 02:08:43] "GET / HTTP/1.1" 302 0
+[13/Sep/2021 02:08:43] "GET /accounts/login/?next=/ HTTP/1.1" 200 4082
+[13/Sep/2021 02:08:49] "GET /admin/ HTTP/1.1" 302 0
+[13/Sep/2021 02:08:49] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2214
+[13/Sep/2021 02:08:49] "GET /static/admin/css/base.css HTTP/1.1" 304 0
+[13/Sep/2021 02:08:49] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+[13/Sep/2021 02:08:49] "GET /static/admin/css/login.css HTTP/1.1" 304 0
+[13/Sep/2021 02:08:49] "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+[13/Sep/2021 02:08:49] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+[13/Sep/2021 02:08:49] "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+[13/Sep/2021 02:08:49] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+[13/Sep/2021 02:08:49] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+[13/Sep/2021 02:08:58] "POST /admin/login/?next=/admin/ HTTP/1.1" 200 2375
+[13/Sep/2021 02:08:58] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+[13/Sep/2021 02:09:01] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[13/Sep/2021 02:09:01] "GET /admin/ HTTP/1.1" 200 8059
+[13/Sep/2021 02:09:01] "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+[13/Sep/2021 02:09:01] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+[13/Sep/2021 02:09:01] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+[13/Sep/2021 02:10:42] "GET / HTTP/1.1" 200 3798
+[13/Sep/2021 02:10:47] "GET /admin/ HTTP/1.1" 200 8059
+[13/Sep/2021 02:10:54] "GET /admin/passwdui/passwdmgmttable/ HTTP/1.1" 200 10896
+[13/Sep/2021 02:10:54] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+[13/Sep/2021 02:10:54] "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+[13/Sep/2021 02:10:54] "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+[13/Sep/2021 02:10:54] "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+[13/Sep/2021 02:10:54] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+[13/Sep/2021 02:10:54] "GET /static/admin/js/core.js HTTP/1.1" 304 0
+[13/Sep/2021 02:10:54] "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+[13/Sep/2021 02:10:54] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Sep/2021 02:10:54] "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+[13/Sep/2021 02:10:54] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+[13/Sep/2021 02:10:54] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+[13/Sep/2021 02:11:05] "GET /admin/passwdui/passwdmgmttable/15/change/ HTTP/1.1" 200 10277
+[13/Sep/2021 02:11:05] "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+[13/Sep/2021 02:11:05] "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+[13/Sep/2021 02:11:05] "GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+[13/Sep/2021 02:11:05] "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19634
+[13/Sep/2021 02:11:05] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Sep/2021 02:11:05] "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+[13/Sep/2021 02:11:05] "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+[13/Sep/2021 02:11:05] "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+[13/Sep/2021 02:11:05] "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+[13/Sep/2021 02:11:11] "GET /admin/passwdui/passwdmgmttable/ HTTP/1.1" 200 10896
+[13/Sep/2021 02:11:18] "GET /admin/passwdui/passwdmgmttable/14/change/ HTTP/1.1" 200 10276
+[13/Sep/2021 02:11:18] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Sep/2021 02:11:28] "GET /admin/passwdui/passwdmgmttable/ HTTP/1.1" 200 10896
+[13/Sep/2021 02:11:34] "GET /admin/passwdui/passwdmgmttable/ HTTP/1.1" 200 10896
+[13/Sep/2021 02:11:34] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Sep/2021 02:11:49] "GET / HTTP/1.1" 200 3798
+[13/Sep/2021 02:11:52] "GET /admin/passwdui/passwdmgmttable/ HTTP/1.1" 200 10896
+[13/Sep/2021 02:11:55] "GET /admin/oauth2_provider/idtoken/add/ HTTP/1.1" 200 10018
+[13/Sep/2021 02:11:55] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Sep/2021 02:11:55] "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+[13/Sep/2021 02:12:01] "GET /admin/oauth2_provider/refreshtoken/add/ HTTP/1.1" 200 10741
+[13/Sep/2021 02:12:01] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Sep/2021 02:12:04] "GET /admin/auth/user/?_to_field=id&_popup=1 HTTP/1.1" 200 6282
+[13/Sep/2021 02:12:04] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[13/Sep/2021 02:12:04] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[13/Sep/2021 02:12:04] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[13/Sep/2021 02:12:16] "GET /admin/auth/user/add/?_changelist_filters=_to_field%3Did%26_popup%3D1&_popup=1&_to_field=id HTTP/1.1" 200 4679
+[13/Sep/2021 02:12:16] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[13/Sep/2021 02:12:23] "GET /admin/oauth2_provider/ HTTP/1.1" 200 4742
+[13/Sep/2021 02:12:29] "GET /admin/ HTTP/1.1" 200 8059
+[13/Sep/2021 02:12:35] "GET / HTTP/1.1" 200 3798
+[13/Sep/2021 02:12:43] "GET /?host=192.168.1.49 HTTP/1.1" 200 4798
+/root/password/password-portal/PASSWD_PORTAL/PASSWD_PORTAL/settings.py changed, reloading.
+Performing system checks...
+
+September 13, 2021 - 02:07:57
+Django version 3.2.7, using settings 'PASSWD_PORTAL.settings'
+Starting development server at http://0.0.0.0:8080/
+Quit the server with CONTROL-C.
+Watching for file changes with StatReloader
+System check identified some issues:
+
+WARNINGS:
+?: (urls.W005) URL namespace 'oauth2_provider' isn't unique. You may not be able to reverse all URLs in this namespace
+
+System check identified 1 issue (0 silenced).

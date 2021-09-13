@@ -87,7 +87,15 @@ play_root_pass_change(){
 
 
 usage(){
+	
 	echo
+	echo
+	echo "				----------------------------------			"
+	echo " 				WELCOME TO ROOT PASSWORD MANAGEMENT			"
+	echo "				-----------------------------------			"
+ 	echo 
+	echo 	
+	echo 
 	echo " -d Generate database related information (DB name/table, user and password)"
 	echo " -m Run Playbook to Setup Database"
 	echo " -n Generate encrypted password for non-root user ($user_to_create)"

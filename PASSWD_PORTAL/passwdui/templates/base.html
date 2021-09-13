@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Retrival Portal</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bootstrap search box or search panel like amazon.com"/>
+    <meta name="robots" content="index, follow"/>
+    
+    <style>
+    .button {
+        background-color: cornflowerblue; /* Green */
+        border: none;
+        color: white;
+        padding: 5px 40px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        width: 8%;
+        margin-right: 30px;
+        margin-top: 1%;
+
+    }
+    .button1 {
+        background-color: white; 
+        color: black; 
+        border: 2px solid cornflowerblue;
+        border-radius: 25px;
+    }
+
+    .button1:hover {
+        background-color: cornflowerblue;
+        color: white;
+    }
+
+    .container{
+        margin-top:5%;
+    }
+      /* Style to create scroll bar in dropdown */ 
+    .scrollable-dropdown{
+        height: auto;
+        max-height:320px;  /* Increase / Decrease value as per your need */
+        overflow-x: hidden;
+    }
+    table#seacheddata tr td {
+        height: 20px;
+        color: dimgrey;
+        padding-right: 10px;
+        background-repeat: no-repeat;
+        text-decoration: none;
+        border-spacing: 0;
+        border-style: none;
+    }
+    table#epsbar tr td {
+        background: cornflowerblue;
+        color: #fff;
+        font-size: 25px;
+        color: white;
+        background-repeat: no-repeat;
+        text-decoration: none;
+        border-spacing: 0;
+        border-style: none;
+    }
+    table#inputbar tr td {
+        height: 20px;
+        color: rgb(7, 0, 0);
+        padding-right: 10px;
+        background-repeat: no-repeat;
+        text-decoration: none;
+        border-spacing: 0;
+        border-style: none;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        color: #3e3e3e;
+        font-family: Open Sans, Arial, Helvetica, sans-serif, "Calibri";
+        font-size: 100%;
+        line-height: 1.3em;
+    }
+    div#main{
+        margin: 10px;
+    }
+    input#search{
+        width: 50%;
+        height: 25px;
+        
+    }
+    #mainbutton {
+        position: relative;
+        bottom: 30px;
+    }
+    </style>
+
+</head>
+    
+<body>
+    <table id="epsbar" width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <td valign=center width="10"><img src={% static "logo_fortinet.png" %} border=0 valign=center width="200" height="90"></td><td><h5>Password Management Portal</h5></td>
+            {% if user.is_authenticated %}
+                <td style="font-size: 20px; color: white; text-align: right;">User: {{ user.get_username }}</td>
+                <td style="font-size: 20px; color: white; text-align: center;"><a href="{% url 'logout'%}?next={{request.path}}"><div style="color: white;">Logout</div></a></td>
+            {% endif %} 
+        </tr>
+    </table>
+    {% block content %}{% endblock content %}
+</body>
+</html>
